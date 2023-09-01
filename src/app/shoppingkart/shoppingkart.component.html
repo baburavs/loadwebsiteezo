@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet">
+    <title>Responsive Header</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">Shrin</div>
+           
+        </nav>
+    </header>
+    <!-- <div class="image-list container-fluid p-0">
+        <div class="row">
+            <div class="image-card col-md-2" *ngFor="let image of images">
+                <img [src]="image.url" alt="{{ image.name }}" class="img-fluid w-100" />
+                <h2>{{ image.itemName }}</h2>
+                <p>Price: {{ image.itemPrice }}</p>
+            </div>
+        </div>
+      </div> -->
+
+      <div class="image-list-wrapper p-0">
+        <div class="image-list-content">
+            <div class="image-card" *ngFor="let image of images">
+                <img [src]="image.url" alt="{{ image.name }}" class="img-fluid w-100" />
+                <div class="img_desc">
+                    <h3>{{ image.itemName }}</h3>
+                    <p>Price: {{ image.itemPrice }}</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+</body>
+</html>
